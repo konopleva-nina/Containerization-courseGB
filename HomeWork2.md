@@ -10,6 +10,8 @@ lxd init(Здесь просто нажимаем на Enter что уствно
 Проверяем
 
 lxc storage list
+
+![установка лкс](https://github.com/konopleva-nina/Containerization-courseGB/blob/main/HomeWork2_scrin1.jpg)
 ## Cоздаем контейнер
 
 sudo apt update
@@ -27,6 +29,8 @@ free -m —проверяем пямаять
 exit -- выходим
 
 lxc-stop -n test123 - -закрываем
+
+![создаем контейнер](https://github.com/konopleva-nina/Containerization-courseGB/blob/main/HomeWork2_scrin2.jpg)
 
 nano /var/lib/lxc/test123/config-открываем
 
