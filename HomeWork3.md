@@ -131,7 +131,7 @@ echo "123test" >> /example/passwords.txt
 Объяснение:
 Мы создали директорию и файл внутри контейнера Ubuntu.
 
-![задание 4](https://github.com/konopleva-nina/Containerization-courseGB/blob/main/Homework3_scrin5.jpg)
+![задание 4_1](https://github.com/konopleva-nina/Containerization-courseGB/blob/main/Homework3_scrin5.jpg)
 __
 Задача:
 Давайте попробуем остановить контейнер и затем запустить его снова. Сохранятся ли наши данные?
@@ -155,9 +155,9 @@ __
 Задача:
 Рассмотрим наиболее интересный вариант - использование внешнего хранилища. Создадим директорию и подмонтируем ее к контейнеру:
 
-![задание 4](https://github.com/konopleva-nina/Containerization-courseGB/blob/main/Homework3_scrin6.jpg)
+![задание 4_2](https://github.com/konopleva-nina/Containerization-courseGB/blob/main/Homework3_scrin6.jpg)
 
-![задание 4](https://github.com/konopleva-nina/Containerization-courseGB/blob/main/Homework3_scrin7.jpg)
+![задание 4_3](https://github.com/konopleva-nina/Containerization-courseGB/blob/main/Homework3_scrin7.jpg)
 __
 mkdir /test/folder
 docker run -it -h GB --name gb-test -v /test/folder:/otherway ubuntu:22.10
