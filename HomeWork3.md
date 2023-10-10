@@ -31,6 +31,7 @@ newgrp docker
 __
 docker --version
 ```
+![задание 1](https://github.com/konopleva-nina/Containerization-courseGB/blob/main/Homework3_scrin1.jpg)
 
 ## 2 -тестируем
 
@@ -85,6 +86,7 @@ docker exec: Выполняет команду внутри запущенног
 Управление контейнерами:
 docker rm $(docker ps -aq): удалит все остановленные контейнеры
 __
+![задание 2](https://github.com/konopleva-nina/Containerization-courseGB/blob/main/Homework3_scrin2.jpg)
 
 docker ps: Просмотр списка запущенных контейнеров.
 docker ps -a: Просмотр списка всех контейнеров (включая остановленные).
@@ -97,6 +99,9 @@ docker pull: Загрузка образа с Docker Hub.
 docker build: Сборка образа из Dockerfile.
 docker rmi: Удаляет образ.
 ```
+![задание 3](https://github.com/konopleva-nina/Containerization-courseGB/blob/main/Homework3_scrin3.jpg)
+
+![задание 4](https://github.com/konopleva-nina/Containerization-courseGB/blob/main/Homework3_scrin4.jpg)
 
 __
 ## 4- Хранение данных в контейнерах Docker: Руководство с пояснениями
@@ -125,6 +130,8 @@ touch /example/passwords.txt
 echo "123test" >> /example/passwords.txt
 Объяснение:
 Мы создали директорию и файл внутри контейнера Ubuntu.
+
+![задание 4](https://github.com/konopleva-nina/Containerization-courseGB/blob/main/Homework3_scrin5.jpg)
 __
 Задача:
 Давайте попробуем остановить контейнер и затем запустить его снова. Сохранятся ли наши данные?
@@ -147,6 +154,10 @@ docker run -it -h GB --name gb-test ubuntu:22.10
 __
 Задача:
 Рассмотрим наиболее интересный вариант - использование внешнего хранилища. Создадим директорию и подмонтируем ее к контейнеру:
+
+![задание 4](https://github.com/konopleva-nina/Containerization-courseGB/blob/main/Homework3_scrin6.jpg)
+
+![задание 4](https://github.com/konopleva-nina/Containerization-courseGB/blob/main/Homework3_scrin7.jpg)
 __
 mkdir /test/folder
 docker run -it -h GB --name gb-test -v /test/folder:/otherway ubuntu:22.10
