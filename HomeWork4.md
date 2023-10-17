@@ -58,3 +58,11 @@ docker attach: Присоединяется к работающему конте
 docker logs: Выводит логи контейнера.
 Пример: docker logs my-container
 
+![скрин 1](https://github.com/konopleva-nina/Containerization-courseGB/blob/main/Homework4_scrin1.jpg)
+![скрин 2](https://github.com/konopleva-nina/Containerization-courseGB/blob/main/Homework4_scrin2.jpg)
+![скрин 3](https://github.com/konopleva-nina/Containerization-courseGB/blob/main/Homework4_scrin3.jpg)
+![скрин 4](https://github.com/konopleva-nina/Containerization-courseGB/blob/main/Homework4_scrin4.jpg)
+![скрин 5](https://github.com/konopleva-nina/Containerization-courseGB/blob/main/Homework4_scrin5.jpg)
+
+
+
