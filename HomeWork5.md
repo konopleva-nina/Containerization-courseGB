@@ -1,19 +1,28 @@
-sudo docker run --name nina-mysql -e MYSQL_ROOT_PASSWORD=nina-secret -d mysql:8.0.31
+# sudo docker run --name nina-mysql -e MYSQL_ROOT_PASSWORD=nina-secret -d mysql:8.0.31
 
 docker run - запуск контейнера
+
 --name nina-mysql имя контейнера
+
 -e MYSQL_ROOT_PASSWORD=nina-secret устанавливаем переменную для окружения
 переменная содержит пароль, который мы сами устанавливаем после знака =, логин по умолчанию root
+
 -d запустить докер в фоновом режиме, те в режиме демона
+
 mysql:8.0.31 имя образа, на основании которого будет создан наш контейнер
 
 
-sudo docker run --name myphp -d --link nina-mysql:db -p 8081:80 phpmyadmin/phpmyadmin
+# sudo docker run --name myphp -d --link nina-mysql:db -p 8081:80 phpmyadmin/phpmyadmin
 docker run - запуск контейнера
+
 --name myphp имя контейнера
+
 -d запуск в режиме демона
+
 --link связывает контейнер myphp с nina-mysql
+
 -p 8081:80 пробрасывает порт 8081 с нашего хоста на порт 80 контейнера
+
 phpmyadmin/phpmyadmin имя образа на основе которого будет создан контейнер
 ![docker run](https://github.com/konopleva-nina/Containerization-courseGB/blob/main/Homework5_scrin1.jpg)
 ![docker run](https://github.com/konopleva-nina/Containerization-courseGB/blob/main/Homework5_scrin2.jpg)
